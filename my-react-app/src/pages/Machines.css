@@ -1,0 +1,371 @@
+.machines-page {
+  min-height: 100vh;
+  background: #f4f7fb;
+  padding: 35px 7%;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #1f2937;
+}
+
+
+/* Header */
+
+.machines-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.machines-header h1 {
+  font-size: 32px;
+  margin-bottom: 8px;
+}
+
+.machines-header p {
+  color: #6b7280;
+}
+
+.add-machine-btn {
+  background: #2563eb;
+  color: white;
+  text-decoration: none;
+
+  padding: 12px 18px;
+
+  border-radius: 7px;
+
+  font-weight: bold;
+}
+
+.add-machine-btn:hover {
+  background: #1d4ed8;
+}
+
+
+/* Statistics */
+
+.machine-stats {
+  display: grid;
+
+  grid-template-columns: repeat(4, 1fr);
+
+  gap: 20px;
+
+  margin-bottom: 30px;
+}
+
+.machine-stat-card {
+  background: white;
+
+  padding: 22px;
+
+  border-radius: 10px;
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 18px;
+
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.07);
+}
+
+.machine-stat-card > span {
+  font-size: 35px;
+}
+
+.machine-stat-card h3 {
+  font-size: 28px;
+
+  margin-bottom: 5px;
+}
+
+.machine-stat-card p {
+  color: #6b7280;
+
+  font-size: 14px;
+}
+
+
+/* Controls */
+
+.machine-controls {
+  background: white;
+
+  padding: 18px;
+
+  border-radius: 10px;
+
+  display: flex;
+
+  gap: 15px;
+
+  margin-bottom: 20px;
+
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.07);
+}
+
+.search-box {
+  flex: 1;
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 10px;
+
+  border: 1px solid #d1d5db;
+
+  border-radius: 6px;
+
+  padding: 0 12px;
+}
+
+.search-box input {
+  width: 100%;
+
+  border: none;
+
+  outline: none;
+
+  padding: 12px 5px;
+
+  font-size: 14px;
+}
+
+.machine-controls select {
+  min-width: 180px;
+
+  border: 1px solid #d1d5db;
+
+  border-radius: 6px;
+
+  padding: 0 12px;
+
+  outline: none;
+
+  background: white;
+}
+
+
+/* Table */
+
+.machines-container {
+  background: white;
+
+  border-radius: 10px;
+
+  overflow-x: auto;
+
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.07);
+}
+
+.machines-table {
+  min-width: 1050px;
+}
+
+.machines-table-header,
+.machines-table-row {
+  display: grid;
+
+  grid-template-columns:
+    0.9fr
+    1.3fr
+    1.3fr
+    0.9fr
+    0.8fr
+    1fr
+    1.8fr;
+
+  gap: 15px;
+
+  align-items: center;
+
+  padding: 17px 20px;
+}
+
+.machines-table-header {
+  background: #111827;
+
+  color: white;
+
+  font-size: 14px;
+
+  font-weight: bold;
+}
+
+.machines-table-row {
+  border-bottom: 1px solid #e5e7eb;
+
+  font-size: 14px;
+}
+
+.machines-table-row:last-child {
+  border-bottom: none;
+}
+
+.machine-id {
+  color: #2563eb;
+
+  font-weight: bold;
+}
+
+
+/* Status */
+
+.machine-status {
+  display: inline-block;
+
+  padding: 6px 10px;
+
+  border-radius: 20px;
+
+  font-size: 12px;
+
+  font-weight: bold;
+}
+
+.machine-status.running {
+  background: #dcfce7;
+
+  color: #15803d;
+}
+
+.machine-status.maintenance {
+  background: #fef3c7;
+
+  color: #b45309;
+}
+
+.machine-status.breakdown {
+  background: #fee2e2;
+
+  color: #dc2626;
+}
+
+.machine-status.inactive {
+  background: #e5e7eb;
+
+  color: #4b5563;
+}
+
+
+/* Actions */
+
+.machine-actions {
+  display: flex;
+
+  gap: 7px;
+
+  align-items: center;
+}
+
+.machine-actions a,
+.machine-actions button {
+  border: none;
+
+  padding: 7px 10px;
+
+  border-radius: 5px;
+
+  font-size: 12px;
+
+  font-weight: bold;
+
+  text-decoration: none;
+
+  cursor: pointer;
+}
+
+.view-btn {
+  background: #eff6ff;
+
+  color: #2563eb;
+}
+
+.view-btn:hover {
+  background: #dbeafe;
+}
+
+.edit-btn {
+  background: #fef3c7;
+
+  color: #b45309;
+}
+
+.edit-btn:hover {
+  background: #fde68a;
+}
+
+.delete-btn {
+  background: #fee2e2;
+
+  color: #dc2626;
+}
+
+.delete-btn:hover {
+  background: #fecaca;
+}
+
+
+/* Empty State */
+
+.no-machines {
+  text-align: center;
+
+  padding: 70px 20px;
+
+  color: #6b7280;
+}
+
+.no-machines div {
+  font-size: 45px;
+
+  margin-bottom: 15px;
+}
+
+.no-machines h3 {
+  color: #374151;
+
+  margin-bottom: 8px;
+}
+
+
+/* Responsive */
+
+@media (max-width: 1000px) {
+
+  .machine-stats {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+}
+
+
+@media (max-width: 650px) {
+
+  .machines-page {
+    padding: 25px 5%;
+  }
+
+  .machines-header {
+    flex-direction: column;
+
+    align-items: flex-start;
+
+    gap: 15px;
+  }
+
+  .machine-stats {
+    grid-template-columns: 1fr;
+  }
+
+  .machine-controls {
+    flex-direction: column;
+  }
+
+  .machine-controls select {
+    height: 45px;
+  }
+
+}
