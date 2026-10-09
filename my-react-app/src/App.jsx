@@ -4,7 +4,7 @@ import Home from "./pages/Home";
 import Signup from "./pages/Signup";
 
 import Dashboard from "./pages/Dashboard";
-import Login from "./pages/login";
+import Login from "./pages/Login";
 
 import Machines from "./pages/Machines";
 import AddMachine from "./pages/AddMachine";
