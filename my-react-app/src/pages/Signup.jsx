@@ -42,7 +42,7 @@ function Signup() {
     try {
       // Send only the required data to backend
       const response = await fetch(
-        "https://machine-maintenance-backend01-1.onrender.com/api/auth/register",
+        "https://machine-maintenance-backend01-2.onrender.com/api/auth/register",
         {
           method: "POST",
 
