@@ -16,7 +16,7 @@ function login() {
     });
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
 
     if(!formData.email && !formData.password){
@@ -26,7 +26,7 @@ function login() {
     }
 
     try{
-      let response =  fetch("https://machine-maintenance-backend01-2.onrender.com/api/auth/login",{
+      let response = await fetch("https://machine-maintenance-backend01-2.onrender.com/api/auth/login",{
         method:"POST",
         headers:{
           "Content-Type" : "application/json"
@@ -37,7 +37,7 @@ function login() {
         })
       })
 
-    let data =  response.json()
+    let data = await response.json()
     if(!response.ok){
       console.log("Invalid Email & Password")
       return;
