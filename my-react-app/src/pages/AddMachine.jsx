@@ -31,7 +31,7 @@ function AddMachine() {
     // Backend API will be connected here later.
    
     try{
-      let response = await fetch("https://machine-maintenance-backend01-1.onrender.com/api/auth/addMachine",{
+      let response = await fetch("https://machine-maintenance-backend01-2.onrender.com/api/auth/addMachine",{
         method:"POST",
         headers:{
           "Content-Type" : "application/json"
