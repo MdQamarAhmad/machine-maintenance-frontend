@@ -26,7 +26,7 @@ function login() {
     }
 
     try{
-      let response =  fetch("https://machine-maintenance-backend01-1.onrender.com/api/auth/login",{
+      let response =  fetch("https://machine-maintenance-backend01-2.onrender.com/api/auth/login",{
         method:"POST",
         headers:{
           "Content-Type" : "application/json"
