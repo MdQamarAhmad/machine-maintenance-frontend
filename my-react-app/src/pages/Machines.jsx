@@ -9,7 +9,7 @@ function Machines() {
 
   // Fetch machines from backend
   useEffect(() => {
-    fetch("https://machine-maintenance-backend01-1.onrender.com/api/auth/getMachine")
+    fetch("https://machine-maintenance-backend01-2.onrender.com/api/auth/getMachine")
       .then((res) => res.json())
       .then((data) => {
         setMachines(data);
@@ -29,7 +29,7 @@ const handleDelete = async (id) => {
 
   try {
     const res = await fetch(
-      `https://machine-maintenance-backend01-1.onrender.com/api/auth/deleteMachine/${id}`,
+      `https://machine-maintenance-backend01-2.onrender.com/api/auth/deleteMachine/${id}`,
       {
         method: "DELETE",
       }
